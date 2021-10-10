@@ -19,7 +19,7 @@ import { router } from "./routes";
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 const port = 8080;
-
+const app = express();
 createConnection(config as ConnectionOptions)
     .then(async (connection) => {
         const app = express();
@@ -31,10 +31,15 @@ createConnection(config as ConnectionOptions)
 
         app.use("/", router)
         app.listen(port, () => {
-            console.log('Server is running at',port);
+            console.log('Server is running at', port);
         });
     })
     .catch((error) => {
         console.log(error);
 
     });
+
+//Dangerous
+if ("development" == app.get("env")) {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+}
