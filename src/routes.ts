@@ -5,11 +5,15 @@ const router = Router();
 
 
 //Default route
-router.get("/", (req, res) => {
+router.get("/", function(req, res){
     res.send({
         message: "API WORKING!"
     });
 });
+
+// router.get('/', function(req, res){
+//     res.redirect('/todo');
+//  });
 
 router.get("/user", AuthController.fetchUser);
 router.post("/user/signup", AuthController.signUp);

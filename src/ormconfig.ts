@@ -20,6 +20,7 @@ const connectionOptions: ConnectionOptions = {
     username: "evmngqwjyksqhi",
     password: "6251cd3b5da29fdd884618262ba5f717ed0ea9dd4b2871c2428d34e499982a25",
     database: "d9rglt7i56h1gg",
+    // herokuCLI:"heroku pg:psql postgresql-fluffy-18873 --app beautyshopapp",
     entities: [User],
 
     extra: {

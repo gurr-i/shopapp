@@ -26,6 +26,7 @@ createConnection(config as ConnectionOptions)
         app.use(express.json());
         app.use(express.urlencoded({ extended: false }));
         const port = process.env.PORT || 8080;
+        // app.listen(process.env.PORT || 3000);
 
 
         app.use("/", router)
