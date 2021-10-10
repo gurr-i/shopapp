@@ -1,4 +1,5 @@
 git add .
 git commit -m "update"
 heroku git:remote -a beautyshopapp
+git push
 git push heroku main/master
