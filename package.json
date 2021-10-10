@@ -1,21 +1,41 @@
 {
-  "name": "shopapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.13",
-    "tcs": "^10.0.2",
-    "tsc": "^2.0.3"
-  },
-  "devDependencies": {
-    "typescript": "^4.4.3"
-  }
+    "name": "shopapp",
+    "version": "1.0.0",
+    "description": "an Shopping app",
+    "main": "index.js",
+    "engines": {
+        "node": "12.11.1",
+        "npm": "6.14.8"
+    },
+    "scripts": {
+        "start": "node public/app.js",
+        "dev": "nodemon src/app.ts",
+        "build": "tsc -p ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.13",
+        "@types/jsonwebtoken": "^8.5.5",
+        "@types/node": "^16.10.3",
+        "bcrypt": "^5.0.1",
+        "email-validator": "^2.0.4",
+        "express": "^4.17.1",
+        "grep": "^0.1.0",
+        "jsonwebtoken": "^8.5.1",
+        "nodemon": "^2.0.13",
+        "pg": "^8.7.1",
+        "pg-promise": "^10.11.0",
+        "secure-password": "^4.0.0",
+        "tcs": "^10.0.2",
+        "ts-node": "^10.2.1",
+        "tsc": "^2.0.3",
+        "typeorm": "^0.2.38"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.0",
+        "@types/pg": "^8.6.1",
+        "typescript": "^4.4.3"
+    }
 }
