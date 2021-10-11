@@ -1,1 +1,2 @@
-web: nodemon app.ts
+web: npm run start
+worker: node app.js
