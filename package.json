@@ -28,6 +28,7 @@
         "nodemon": "^2.0.13",
         "pg": "^8.7.1",
         "pg-promise": "^10.11.0",
+        "prerender-node": "^3.2.5",
         "secure-password": "^4.0.0",
         "tcs": "^10.0.2",
         "ts-node": "^10.2.1",
